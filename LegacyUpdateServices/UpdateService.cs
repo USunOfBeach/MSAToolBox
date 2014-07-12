@@ -18,7 +18,7 @@ namespace LegacyUpdateServices
         private MySqlConnection db_connection;
         public UpdateService()
         {
-            db_connection = new MySqlConnection(String.Format("Server={0};Database={1};Uid={2};Pwd={3};Charset={4};", "localhost", "legacyupdateinfo", "root", "", "utf8"));
+            db_connection = new MySqlConnection(String.Format("Server={0};Database={1};Uid={2};Pwd={3};Charset={4};", "localhost", "legacyupdateinfo", "root", "mtc31415926", "utf8"));
             db_connection.Open();
         }
         public Stream DownloadFile(UpdatePatchFileInfo fileInfo)

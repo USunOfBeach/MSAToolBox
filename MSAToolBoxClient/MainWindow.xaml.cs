@@ -598,6 +598,8 @@ namespace MSAToolBoxClient
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            // always disable this button after click
+            updateButton.IsEnabled = false;
             // update case
             if (IsUpdateNeeded)
             {
