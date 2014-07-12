@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSAToolBoxClient", "MSAToolBoxClient\MSAToolBoxClient.csproj", "{04F3DEB9-86DA-4326-AB1B-C4C09CE0081D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AF4FC5F7-62BB-4E7E-9FFE-C6AAB21229DC} = {AF4FC5F7-62BB-4E7E-9FFE-C6AAB21229DC}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSAToolBoxServices", "MSAToolBoxServices\MSAToolBoxServices.csproj", "{AF4FC5F7-62BB-4E7E-9FFE-C6AAB21229DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSAToolBoxServer", "MSAToolBoxServer\MSAToolBoxServer.csproj", "{B2F250E4-36DF-4FA0-ACFB-4DA4AECAF476}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LegacyUpdateServices", "LegacyUpdateServices\LegacyUpdateServices.csproj", "{F15A82C5-DD52-4BDA-9FE6-45279AE47238}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LegacyUpdateServer", "LegacyUpdateServer\LegacyUpdateServer.csproj", "{08AA8599-47B3-4700-8D81-5573C7C966B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LegacyPatcher", "LegacyPatcher\LegacyPatcher.csproj", "{01304EA4-8A56-4D88-93BA-D996EAEB5244}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04F3DEB9-86DA-4326-AB1B-C4C09CE0081D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04F3DEB9-86DA-4326-AB1B-C4C09CE0081D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04F3DEB9-86DA-4326-AB1B-C4C09CE0081D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04F3DEB9-86DA-4326-AB1B-C4C09CE0081D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF4FC5F7-62BB-4E7E-9FFE-C6AAB21229DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF4FC5F7-62BB-4E7E-9FFE-C6AAB21229DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF4FC5F7-62BB-4E7E-9FFE-C6AAB21229DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF4FC5F7-62BB-4E7E-9FFE-C6AAB21229DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2F250E4-36DF-4FA0-ACFB-4DA4AECAF476}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2F250E4-36DF-4FA0-ACFB-4DA4AECAF476}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2F250E4-36DF-4FA0-ACFB-4DA4AECAF476}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2F250E4-36DF-4FA0-ACFB-4DA4AECAF476}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F15A82C5-DD52-4BDA-9FE6-45279AE47238}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F15A82C5-DD52-4BDA-9FE6-45279AE47238}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F15A82C5-DD52-4BDA-9FE6-45279AE47238}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F15A82C5-DD52-4BDA-9FE6-45279AE47238}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08AA8599-47B3-4700-8D81-5573C7C966B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08AA8599-47B3-4700-8D81-5573C7C966B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08AA8599-47B3-4700-8D81-5573C7C966B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08AA8599-47B3-4700-8D81-5573C7C966B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01304EA4-8A56-4D88-93BA-D996EAEB5244}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01304EA4-8A56-4D88-93BA-D996EAEB5244}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01304EA4-8A56-4D88-93BA-D996EAEB5244}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01304EA4-8A56-4D88-93BA-D996EAEB5244}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

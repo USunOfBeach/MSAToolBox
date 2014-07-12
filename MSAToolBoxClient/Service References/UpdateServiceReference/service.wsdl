@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="UpdateService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/LegacyUpdateServices" />
+      <xsd:import namespace="http://schemas.microsoft.com/Message" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IUpdateService_GetUpdateInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUpdateInfo" />
+  </wsdl:message>
+  <wsdl:message name="IUpdateService_GetUpdateInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUpdateInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUpdateService_GetLatestPatchFiles_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLatestPatchFiles" />
+  </wsdl:message>
+  <wsdl:message name="IUpdateService_GetLatestPatchFiles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLatestPatchFilesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUpdateService_DownloadFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:DownloadFile" />
+  </wsdl:message>
+  <wsdl:message name="IUpdateService_DownloadFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DownloadFileResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IUpdateService">
+    <wsdl:operation name="GetUpdateInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUpdateService/GetUpdateInfo" message="tns:IUpdateService_GetUpdateInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUpdateService/GetUpdateInfoResponse" message="tns:IUpdateService_GetUpdateInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLatestPatchFiles">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUpdateService/GetLatestPatchFiles" message="tns:IUpdateService_GetLatestPatchFiles_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUpdateService/GetLatestPatchFilesResponse" message="tns:IUpdateService_GetLatestPatchFiles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DownloadFile">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUpdateService/DownloadFile" message="tns:IUpdateService_DownloadFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUpdateService/DownloadFileResponse" message="tns:IUpdateService_DownloadFile_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:service name="UpdateService" />
+</wsdl:definitions>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="942f61d4-829d-49d3-970d-d25b58954f92" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://112.124.14.194:8733/MSAToolBoxUpdateService/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="dcb6e4d1-da9a-473f-ad9e-b55377f29415" SourceId="1" SourceUrl="http://112.124.14.194:8733/MSAToolBoxUpdateService/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="178d5b13-ef48-4d8c-8caf-7079d3a63333" SourceId="1" SourceUrl="http://112.124.14.194:8733/MSAToolBoxUpdateService/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="16554c53-7e5b-447d-80e1-644c85a0800a" SourceId="1" SourceUrl="http://112.124.14.194:8733/MSAToolBoxUpdateService/mex" />
+    <MetadataFile FileName="LegacyUpdateServices.xsd" MetadataType="Schema" ID="02809a6c-5bca-4581-a7ac-81e52b8ee143" SourceId="1" SourceUrl="http://112.124.14.194:8733/MSAToolBoxUpdateService/mex" />
+    <MetadataFile FileName="Message.xsd" MetadataType="Schema" ID="3050882b-364c-4bb1-a13c-19d7fd587b00" SourceId="1" SourceUrl="http://112.124.14.194:8733/MSAToolBoxUpdateService/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
