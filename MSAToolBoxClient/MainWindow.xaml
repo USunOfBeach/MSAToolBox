@@ -5,7 +5,7 @@
         Title="MSA的要你命9000型工具箱原型机v0.1 Alpha" Height="450" Width="800" WindowStartupLocation="CenterScreen" FontFamily="Microsoft YaHei UI Light" FontSize="16" ResizeMode="NoResize" Icon="super mario bros_01.ico" Loaded="MetroWindow_Loaded">
     <Controls:MetroWindow.RightWindowCommands>
         <Controls:WindowCommands>
-            <Button Content="遗产社区" />
+            <Button Content="遗产社区" Click="Button_Click_2" />
         </Controls:WindowCommands>
     </Controls:MetroWindow.RightWindowCommands>
     <Grid>
@@ -71,7 +71,7 @@
                                     </Label.Effect>
                                 </Label>
                                 <Button x:Name="updateButton" Content="检测更新" HorizontalAlignment="Left" Margin="625,293,0,0" VerticalAlignment="Top" Width="156" Padding="5" FontSize="14" Height="35" FontFamily="Microsoft YaHei Light" Click="Button_Click"/>
-                                <ProgressBar x:Name="updateProgressbar" HorizontalAlignment="Left" Margin="240,294,0,0" VerticalAlignment="Top" Width="380" Height="34" Value="50"/>
+                                <ProgressBar x:Name="updateProgressbar" HorizontalAlignment="Left" Margin="240,294,0,0" VerticalAlignment="Top" Width="380" Height="34" Background="#FFECECEC" SmallChange="0.01" LargeChange="0.1"/>
                                 <ScrollViewer Height="259" Width="541" Margin="240,30,1,40">
                                     <TextBlock x:Name="updateInfoContent" HorizontalAlignment="Left" Margin="0,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14" Padding="5" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
                                 </ScrollViewer>

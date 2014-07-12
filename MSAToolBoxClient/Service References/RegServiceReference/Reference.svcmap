@@ -19,13 +19,13 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:8733/MSAToolBoxRegService/mex" Protocol="mex" SourceId="1" />
+    <MetadataSource Address="http://42.121.105.245:8733/MSAToolBoxRegService/mex" Protocol="mex" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="service1.wsdl" MetadataType="Wsdl" ID="1dcbf991-d38d-483b-bed0-7d01361c946c" SourceId="1" SourceUrl="http://42.121.105.245:8733/MSAToolBoxRegService/mex" />
-    <MetadataFile FileName="service2.xsd" MetadataType="Schema" ID="ffc87edb-b14f-4e2e-90ce-6ac16c4e2dda" SourceId="1" SourceUrl="http://42.121.105.245:8733/MSAToolBoxRegService/mex" />
-    <MetadataFile FileName="service21.xsd" MetadataType="Schema" ID="9192ac45-c825-446d-a128-03bb1c93ff52" SourceId="1" SourceUrl="http://42.121.105.245:8733/MSAToolBoxRegService/mex" />
-    <MetadataFile FileName="MSAToolBoxServices1.xsd" MetadataType="Schema" ID="7cfc5eac-c995-41f8-b760-025b1c8d8813" SourceId="1" SourceUrl="http://42.121.105.245:8733/MSAToolBoxRegService/mex" />
+    <MetadataFile FileName="service1.wsdl" MetadataType="Wsdl" ID="2b7589d7-0666-4e54-852c-53bfd0cf29a3" SourceId="1" SourceUrl="http://42.121.105.245:8733/MSAToolBoxRegService/mex" />
+    <MetadataFile FileName="service2.xsd" MetadataType="Schema" ID="44915508-7dad-44d2-b2db-195597176cb1" SourceId="1" SourceUrl="http://42.121.105.245:8733/MSAToolBoxRegService/mex" />
+    <MetadataFile FileName="service21.xsd" MetadataType="Schema" ID="c9b015d3-fce8-44cc-a814-70ca02e08702" SourceId="1" SourceUrl="http://42.121.105.245:8733/MSAToolBoxRegService/mex" />
+    <MetadataFile FileName="MSAToolBoxServices1.xsd" MetadataType="Schema" ID="78a00c3e-7c1e-4ebf-9560-2067991c27b1" SourceId="1" SourceUrl="http://42.121.105.245:8733/MSAToolBoxRegService/mex" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

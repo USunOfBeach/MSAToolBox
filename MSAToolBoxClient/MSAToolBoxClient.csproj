@@ -13,6 +13,21 @@
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -35,6 +50,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>super mario bros_01.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="MahApps.Metro">
@@ -68,6 +86,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="DataManager.cs" />
+    <Compile Include="MFileManager.cs" />
     <Compile Include="Service References\RegServiceReference\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -124,14 +143,14 @@
     <None Include="Service References\RegServiceReference\MSAToolBoxClient.RegServiceReference.RegResult.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\RegServiceReference\MSAToolBoxServices.xsd">
+    <None Include="Service References\RegServiceReference\MSAToolBoxServices1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\RegServiceReference\service.wsdl" />
-    <None Include="Service References\RegServiceReference\service.xsd">
+    <None Include="Service References\RegServiceReference\service1.wsdl" />
+    <None Include="Service References\RegServiceReference\service2.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\RegServiceReference\service1.xsd">
+    <None Include="Service References\RegServiceReference\service21.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Service References\UpdateServiceReference\LegacyUpdateServices.xsd">
@@ -176,10 +195,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\LegacyPatcher\LegacyPatcher.csproj">
-      <Project>{01304ea4-8a56-4d88-93ba-d996eaeb5244}</Project>
-      <Name>LegacyPatcher</Name>
-    </ProjectReference>
     <ProjectReference Include="..\LegacyUpdateServices\LegacyUpdateServices.csproj">
       <Project>{f15a82c5-dd52-4bda-9fe6-45279ae47238}</Project>
       <Name>LegacyUpdateServices</Name>
@@ -196,6 +211,23 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

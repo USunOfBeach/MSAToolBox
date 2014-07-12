@@ -11,7 +11,6 @@ using System.ServiceModel;
 using LegacyUpdateServices;
 using System.Threading;
 using System.IO;
-using LegacyPatcher;
 using MSAToolBoxClient;
 
 namespace LegacyUpdateServer

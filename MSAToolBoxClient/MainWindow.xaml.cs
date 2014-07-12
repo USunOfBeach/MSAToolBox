@@ -14,7 +14,6 @@ using LegacyUpdateServices;
 using System.Collections.Generic;
 using System.Windows.Forms;
 using MSAToolBoxClient.UpdateServiceReference;
-using LegacyPatcher;
 using System.Threading.Tasks;
 using System.Diagnostics;
 using System.Xml;
@@ -40,7 +39,7 @@ namespace MSAToolBoxClient
         private string ClientPath = "";
         private string LegacyUpdateDirectory = "LegacyUpdates";
         private string confFile = "MSAToolBox.xml";
-        private string ServerHost = "127.0.0.1";
+        private string ServerHost = "42.121.105.245";
         private bool IsClientPathValid = false;
         private ushort ClientBuild = 0;
         private bool IsClientValid = false;
@@ -562,7 +561,7 @@ namespace MSAToolBoxClient
                         File.Delete(fullPath + info.FileName);
                 }
             }
-            ModifyGameVersion(build.ToString(), 1, 0, 1);
+            ModifyGameVersion(build.ToString(), 1, 0, 0);
             SetText(updateStatusLabelA, "");
             SetText(updateStatusLabelB, "更新完成。");
             IsUpdateNeeded = false;
@@ -1100,13 +1099,17 @@ namespace MSAToolBoxClient
         private async void MetroWindow_Loaded(object sender, RoutedEventArgs e)
         {
             LoadConfigration();
-            await Task.Delay(1000);
+            await Task.Delay(1500);
             GetClientBuild();
-            await Task.Delay(1000);
+            await Task.Delay(1500);
             GetUpdateInfo();
-            await Task.Delay(1000);
+            await Task.Delay(1500);
             ValidateStartButtonUsability();
-            await Task.Delay(1000);
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://bbs.msacn.org/");
         }
     }
 }

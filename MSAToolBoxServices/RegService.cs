@@ -18,7 +18,6 @@ namespace MSAToolBoxServices
         RESULT_FAILED_EMAIL_TAKEN       = 4,
         RESULT_SUCCESS                  = 5,
         RESULT_FAILED_WITHOUT_REASON    = 6
-
     }
     public enum ChangePwResult
     {
